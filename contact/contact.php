@@ -25,7 +25,7 @@ $error = '';
 
 if(!$error)
 {
-$mail = mail(jsjpng@gmail.com, $subject, $message,
+$mail = mail("jsjpng@gmail.com", $subject, $message,
      "From: ".$name." <".$email.">\r\n"
     ."Reply-To: ".$email."\r\n"
     ."X-Mailer: PHP/" . phpversion());
