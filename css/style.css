@@ -441,6 +441,12 @@ section.featured h2.slogan {
 	font-size: 48px;
 	font-weight: 900;
 }
+
+section.featured h4.slogan {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 900;
+}
   
  /* inner heading */
 section.featured.inner {
@@ -651,18 +657,20 @@ nav#filter a {
 	text-decoration: none;
 }
 
-
+/*Added a bunch of "height:100%;"*/
 .portfolio-items article img {width:100%;} 
 
 .portfolio-item {
 	display: block;
 	position: relative;
+    height:100%;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
 .portfolio-item img {
+height:100%;
 	-webkit-transition: all 300ms linear;
 	-moz-transition: all 300ms linear;
 	-o-transition: all 300ms linear;
@@ -673,11 +681,14 @@ nav#filter a {
 .portfolio-item .portfolio-desc {
     display: block;
     opacity: 0;
-    position: absolute;
+    position:absolute;
+    height: 100%;
     width: 100%;
 	left: 0;
 	top: 0;
 	color: rgba(220, 220, 220);
+    text-align:center;
+    overflow:auto;
 }
 
 
@@ -686,6 +697,7 @@ nav#filter a {
 	height: 100%;
     transition: all 200ms ease-in-out 0s;
 	opacity: 1;
+    
 }
 
 .portfolio-item .portfolio-desc a {
@@ -696,18 +708,22 @@ nav#filter a {
 	text-decoration: none;
 }
 .portfolio-item .portfolio-desc .folio-info {
-	top:-20px;
-	padding: 30px;
+    float:left;
+    position: absolute;
+	top: 25%; left: 50%;
+    transform: translate(-50%,-50%);
+	/*padding: 30px;
 	height: 0;
-    opacity: 0;
-    position: relative;
+    opacity: 0;*/
+   
 }
 
+
 .portfolio-item:hover .folio-info{
-	height: 100%;
     opacity: 1;
     transition: all 500ms ease-in-out 0s;
-	top:5px;
+	top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
