@@ -205,10 +205,9 @@ section.success a.active {
     }
 }
 
-.mosaicflow__column {
-	float:left;
-	}
-    
+.button-group {
+padding-bottom:15px;
+ }
 .mosaic-item {
 
  }
@@ -219,7 +218,7 @@ min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   /*width: 33.33333333%;*/
-  width:100%
+  width:33.33333333%;
     margin: 0px 0px 15px;
 
     position:relative;

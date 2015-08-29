@@ -88,15 +88,29 @@
   
       <!-- Portfolio Grid Section -->
       <section id="portfolio">
-          <div class="container">
+          <div class="container text-center">
               <div class="row">
                   <div class="col-lg-12 text-center">
                       <h2>Portfolio</h2>
                       <hr class="star-primary">
                   </div>
               </div>
-              <div class="clearfix mosaicflow">
-                  <div class="mosaic-item portfolio-item">
+			  <!--
+			  <nav id="filter" class="text-center">
+                      <button type="button" class="btn btn-default" data-filter="*">All</button>
+                      <button type="button"  class="btn btn-default" data-filter=".toprated">Top rated</button>
+                      <button type="button"  class="btn btn-default" data-filter=".summer">Summer only</button>
+                      <button type="button" class="btn btn-default" data-filter=".other">Other category</button>
+              </nav> -->
+			  <div id="filters" class="button-group btn-group">  
+			  <button class="button is-checked btn btn-default" data-filter="*">show all</button>
+  			  <button class="button btn btn-default" data-filter=".toprated">top rated</button>
+  			  <button class="button btn btn-default" data-filter=".summeronly">summer only</button>
+  			  <button class="button btn btn-default" data-filter=".free">free</button>
+			  <button class="button btn btn-default" data-filter=".event">event</button>
+			  </div>
+              <div class="mosaic">
+                  <div class="mosaic-item portfolio-item toprated">
                       <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -106,7 +120,7 @@
                           <img src="img/portfolio/VisionYouthCoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item summeronly">
                       <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -116,7 +130,7 @@
                           <img src="img/portfolio/DeepCoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item toprated">
                       <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -136,7 +150,7 @@
                           <img src="img/portfolio/DEACoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item free">
                       <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -146,7 +160,7 @@
                           <img src="img/portfolio/ArmyCadetsCoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item summeronly">
                       <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -161,7 +175,7 @@
   	 			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   				--->
-  				<div class="mosaic-item portfolio-item">
+  				<div class="mosaic-item portfolio-item toprated">
                       <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -181,7 +195,7 @@
                           <img src="img/portfolio/TUCCoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item summeronly">
                       <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -202,7 +216,7 @@
                           <img src="img/portfolio/OCACCoverPhoto.jpg" class="img-responsive" alt="">
                       </a>
                   </div>
-                  <div class="mosaic-item portfolio-item">
+                  <div class="mosaic-item portfolio-item free">
                       <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                           <div class="caption">
                               <div class="caption-content">
@@ -210,6 +224,119 @@
                               </div>
                           </div>
                           <img src="img/portfolio/OntarioSummerCompanyCoverPhoto.png" class="img-responsive" alt="Ontario Summer Company">
+                      </a>
+                  </div>
+				  
+				  
+				  <div class="mosaic-item portfolio-item free">
+                      <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/Project5kCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item free">
+                      <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/AirCadetsCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item">
+                      <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/UMSCCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item">
+                      <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/DECACoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item free">
+                      <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/StJohnsAmbulanceCoverPhoto.png" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item free">
+                      <a href="#portfolioModal17" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/SeaCadetsCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+  				<div class="mosaic-item portfolio-item">
+                      <a href="#portfolioModal18" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/NYACCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+				  <div class="mosaic-item portfolio-item">
+                      <a href="#portfolioModal19" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/MarkhamAquaticClubCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item">
+                      <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/MUMBACoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  
+                  <div class="mosaic-item portfolio-item event free">
+                      <a href="#portfolioModal21" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/RideForRefugeCoverPhoto.jpg" class="img-responsive" alt="">
+                      </a>
+                  </div>
+                  <div class="mosaic-item portfolio-item event">
+                      <a href="#portfolioModal22" class="portfolio-link" data-toggle="modal">
+                          <div class="caption">
+                              <div class="caption-content">
+                                  <i class="fa fa-search-plus fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="img/portfolio/CNTowerClimbCoverPhoto.jpg" class="img-responsive" alt="Ontario Summer Company">
                       </a>
                   </div>
               </div>
@@ -771,11 +898,431 @@
               </div>
           </div>
       </div>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Project 5K</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/Project5kCoverPhoto.jpg" class="img-responsive img-centered" alt="Project 5k">
+                              <p>Project 5K is a website and community dedicated to providing volunteer opportunities for those who seek it. Their volunteer initiatives are gathered and brought to you via e-mail if you decide to participate in those events.  </p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.project5k.ca/#/">Toronto / Markham</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.project5k.ca/#/">Events throughout the year</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.project5k.ca/#/">No cost</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal13" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Air Cadets</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/AirCadetsCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>The Air Cadet League of Canada is a civilian, non-profit, community-based and volunteer-led organization dedicated to supporting the objectives of the Royal Canadian Air Cadet program. The purposes of the League are to advance the education of the Air Cadets teaching skills such as flying, survival skills, discipline and leadership. </p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.aircadetleague.on.ca/">Ontario</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.aircadetleague.on.ca/">September - June + optional summer camps</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.aircadetleague.on.ca/">No cost</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal14" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Unionville-Milliken Soccer Club</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/UMSCCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>UMSC is a soccer club for youth to develop their skills in the summer. They also have higher level soccer levels such as all-star or rep to tryout for.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.u-msc.com/Default.asp?id=home&l=1">Markham</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.u-msc.com/Default.asp?id=home&l=1"> House leagues outdoor (june - september) indoor (november - march). Competitive is full year.</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.u-msc.com/Default.asp?id=home&l=1">$245/season for house league. Competitive is $4000-4500/ year </a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal15" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>DECA</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/DECACoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>DECA prepares emerging leaders and entrepreneurs for careers in marketing, finance, hospitality and management in high schools and colleges around the globe.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://2016.deca.ca/">Canada</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://2016.deca.ca/">Events throughout the year</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://2016.deca.ca/">$37 for membership. Additional fees occur for each event</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal16" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>St. John's Ambulance Youth Program</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/StJohnsAmbulanceCoverPhoto.png" class="img-responsive img-centered" alt="">
+                              <p>As a component of the St. John Ambulance Brigade, the Youth Program was established to give young people the chance to join in the work of the St. John Ambulance Brigade.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href= "http://www.sja.ca/English/Community-Services/Pages/Youth%20Program/Youth-Services-default.aspx">Ontario</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.sja.ca/English/Community-Services/Pages/Youth%20Program/Youth-Services-default.aspx">Weekly meetings September - June</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.sja.ca/English/Community-Services/Pages/Youth%20Program/Youth-Services-default.aspx">No cost</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal17" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Sea Cadets</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/SeaCadetsCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>It is a national program for young Canadians aged 12 to 18 who are interested in participating in a variety of fun, challenging and rewarding activities while learning about the sea, army and air activities of the Canadian Forces.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.rcsccontario.com/">Ontario</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.rcsccontario.com/">September - June + optional summer camps</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.rcsccontario.com/">No cost</a>
+                                      </strong>
+                                  </li>
+                          	 </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  		</div>
+  		<!--
+  				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  	 			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  				--->
+  		<div class="portfolio-modal modal fade" id="portfolioModal18" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>North York Aquatic Club</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/NYACCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>The North York Aquatic Club (NYAC) is a pre-competitive and competitive swim club in the City of Toronto, Canada, offering high quality coaching, technique instruction and conditioning for all ages.</p>							
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.nyac.on.ca/Home.jsp?team=cannyac">North York</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.nyac.on.ca/Home.jsp?team=cannyac">Contact directly for more information</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.nyac.on.ca/Home.jsp?team=cannyac">Competitive is $1300 - $4100/year depending on skill level + $400 - $600 for meet fees depending on skill level</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal19" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Markham Aquatic Club</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/MarkhamAquaticClubCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>Markham Aquatic Club provides the opportunity and encouragement for each of our swimmers to develop his or her full potential in competitive swimming in the pursuit of personal excellence.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://tuc.org/">Markham</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://tuc.org/">Contact directly for more information.</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://tuc.org/">Contact directly for more information.</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal20" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Markham Unionville Minor Basketball Association</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/MUMBACoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>MUMBA’s House League program provides organized basketball for girls and boys 5-16 years of age in the communities of Markham, Unionville, Thornhill, Stouffville and the surrounding areas. MUMBA's main objective is to offer a basketball program where by every student athlete has the opportunity to develop their basketball and people skills in a positive, constructive and fun environment.</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.mumbabasketball.ca/view/mumbabasketball">Markham</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.mumbabasketball.ca/view/mumbabasketball">October - April (tryouts are in September)</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.mumbabasketball.ca/view/mumbabasketball">$475 for house league, $850 for rep program</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal21" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>Ride for Refuge</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/RideForRefugeCoverPhoto.jpg" class="img-responsive img-centered" alt="">
+                              <p>Ride for Refuge is a one day event, featuring a fantastically fun, family-friendly bike-a-thon supporting charities serving the displaced, vulnerable, and exploited.</p>
+							  <p>You can participate or volunteer. </p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href= "https://rideforrefuge.org/home">Toronto</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="https://rideforrefuge.org/home">October 3rd</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="https://rideforrefuge.org/home"> There is a $25 registration fee. It's encouraged you try to fundraise $75 for youth or $150 for adults. This will waive the registration fee. No cost for volunteering.</a>
+                                      </strong>
+                                  </li>
+                              </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="portfolio-modal modal fade" id="portfolioModal22" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-content">
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl">
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-8 col-lg-offset-2">
+                          <div class="modal-body">
+                              <h2>CN Tower Climb</h2>
+                              <hr class="star-primary">
+                              <img src="img/portfolio/CNTowerClimbCoverPhoto.png" class="img-responsive img-centered" alt="Ontario Summer Company">
+                              <p>The CN Tower Climb for United Way offers you a rare chance to walk past the elevators and straight up Toronto’s most famous landmark. While celebrating a tall personal feat in conquering all 1,776 steps, you’ll also be making meaningful change possible for thousands of individuals and families, elevating our community as a whole. So, are you ready to step up? Way up?</p>
+                              <ul class="list-inline item-details">
+                                  <li>Location:
+                                      <strong><a href="http://www.unitedwaytyr.com/climb">Toronto</a>
+                                      </strong>
+                                  </li>
+                                  <li>Time:
+                                      <strong><a href="http://www.unitedwaytyr.com/climb">November 7th</a>
+                                      </strong>
+                                  </li>
+                                  <li>Cost:
+                                      <strong><a href="http://www.unitedwaytyr.com/climb">$50 if under 18. Otherwise $75.</a>
+                                      </strong>
+                                  </li>
+                          	 </ul>
+                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   
       <!-- jQuery -->
-      <script src="js/jquery.js"></script>
-  	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	  <script src="js/jquery.mosaicflow.min.js"></script>
+      <!-- <script src="js/jquery.js"></script> -->
+	  <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	  <script src="isotope.pkgd.min.js" type="text/javascript"></script> 
 	  
       <!-- Bootstrap Core JavaScript -->
       <script src="js/bootstrap.min.js"></script>
@@ -784,6 +1331,7 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
       <script src="js/classie.js"></script>
       <script src="js/cbpAnimatedHeader.js"></script>
+	  <script src="js/isotope.pkgd.min.js"></script>
   
       <!-- Contact Form JavaScript -->
       <script src="js/jqBootstrapValidation.js"></script>
