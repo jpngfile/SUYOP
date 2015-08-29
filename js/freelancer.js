@@ -24,7 +24,11 @@ $( document ).ready( function() {
     itemSelector: '.mosaic-item',
     layoutMode: 'masonry',
   });
-
+  
+  $container.imagesLoaded().progress (function(){
+  $container.isotope ('layout');
+  });
+  
   // bind filter button click
   $('#filters').on( 'click', 'button', function() {
     var filterValue = $( this ).attr('data-filter');
