@@ -29,11 +29,15 @@ $( document ).ready( function() {
   $container.isotope ('layout');
   });
   
+  var filters ={};
   // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    //filterValue = filterFns[ filterValue ] || filterValue;
+  $('.filters').on( 'click', 'button', function() {
+  var $this = $(this);
+  var $buttonGroup = $this.parents('.button-group');
+  var filterGroup = $buttonGroup.attr ('data-filter-group');
+  
+  filters [filterGroup] = $this.attr('data-filter');
+  var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
   });
 
@@ -42,13 +46,21 @@ $( document ).ready( function() {
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
     $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
+      $buttonGroup.find('.active').removeClass('active');
+      $( this ).addClass('active');
     });
   });
   
 });
-		
+
+//helper function
+function concatValues (obj) {
+var value = '';
+for (var prop in obj) {
+value+=obj[prop];
+}
+return value;
+}
 // Floating label headings for the contact form
 $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
