@@ -209,12 +209,20 @@ section.success a.active {
 padding-bottom:15px;
  }
 
- .filtergroup {
+.dropdown-menu {
+ }
  
- }
+ .filter-group {
+ position:relative;
+ z-index:2;
+  }
 .mosaic-item {
-
+position:relative;
+z-index:-1;
  }
+ 
+ .mosaic {
+  }
  
 #portfolio .portfolio-item {
   display:block;
@@ -224,7 +232,6 @@ min-height: 1px;
   /*width: 33.33333333%;*/
   width:33.33333333%;
     margin: 0px 0px 15px;
-
     position:relative;
 }
 

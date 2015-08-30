@@ -104,59 +104,71 @@
                                <button type="button"  class="btn btn-default" data-filter=".summer">Summer only</button>
                                <button type="button" class="btn btn-default" data-filter=".other">Other category</button>
                        </nav> -->
-         			  <div class="filters">
-               			  <div class="button-group btn-group-vertical" data-filter-group="general">
-               			  <h2>General</h2>
-               			  <button class="button active btn btn-default" data-filter="">show all</button>
-                 			  <button class="button btn btn-default" data-filter=".toprated">Staff Choice</button>
-               			  </div>
-         			  <div class="button-group btn-group-vertical" data-filter-group="type"> 
-         			  <h2>Type</h2>
-         			  <button class="button active btn btn-default" data-filter="">show all</button>
-           			  <button class="button btn btn-default" data-filter=".athletics">Athletics</button>
-           			  <button class="button btn btn-default" data-filter=".business">Business</button>
-           			  <button class="button btn btn-default" data-filter=".engineering">Engineering</button>
-         			  <button class="button btn btn-default" data-filter=".leadership">Leadership</button>
-         			  <button class="button btn btn-default" data-filter=".music">Music</button>
-         			  <button class="button btn btn-default" data-filter=".volunteering">Volunteering</button>
+               		<div class="filter-group button-group btn-group">
+    					<div class="btn-group">
+    						  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">General<span class="caret"></span></button>
+    					  	  <ul class="dropdown-menu filters" data-filter-group="general" role="menu">
+                   			  	  <li><button class="button active btn btn-default" data-filter="">show all</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".toprated">Staff Choice</button></li>
+    						  </ul>
+    					</div>
+    					<div class="btn-group">
+                 			  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">Types <span class="caret"></span></button>
+        					  <ul class="dropdown-menu filters" data-filter-group="type" role="menu">
+        					  	  <li><button class="button active btn btn-default" data-filter="">Show all</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".athletics">Athletics</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".business">Business</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".engineering">Engineering</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".leadership">Leadership</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".music">Music</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".volunteering">Volunteering</button></li>
+        					  </ul>
+    					  </div>
+    					  <div class="btn-group">
+        					  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">Prices <span class="caret"></span></button>
+        					  <ul class="dropdown-menu filters" data-filter-group="price" role="menu">
+                     			  <li><button class="button active btn btn-default" data-filter="">show all</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".free">Free</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".100">$100 or less</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".500">$500 or less</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".1000">$1000 or less</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".2500">$2500 or less</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".rich">More than $2500</button></li>
+        					  </ul>
+    					  </div>
+      					  <div class="btn-group">
+      					   	  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">Times <span class="caret"></span></button>
+          					  <ul class="dropdown-menu filters" data-filter-group="time" role="menu">
+                       			  <li><button class="button active btn btn-default" data-filter="">show all</button></li>
+                         		  <li><button class="button btn btn-default" data-filter=".summer">Summer</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".schoolyear">School year</button></li>
+          					  </ul>
+      					  </div>
+       					  <div class="btn-group">
+       					  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">Durations <span class="caret"></span></button>
+         					  <ul class="dropdown-menu filters" data-filter-group="duration" role="menu">
+                    			  <li><button class="button active btn btn-default" data-filter="">show all</button></li>
+                      			  <li><button class="button btn btn-default" data-filter=".event">1 day</button></li>
+                      			  <li><button class="button btn btn-default" data-filter=".week">1 week</button></li>  
+                    			  <li><button class="button btn btn-default" data-filter=".month">1 month</button></li>
+                    			  <li><button class="button btn btn-default" data-filter=".longtime">Longer than a month</button></li>
+                    			  <li><button class="button btn btn-default" data-filter=".weekly">Weekly</button></li>
+                    			  <li><button class="button btn btn-default" data-filter=".series">Series of events</button></li>
+         					  </ul>
+       					  </div>
+      					  <div class="btn-group">
+        					  <button class="button btn btn-default dropdown-toggle " data-toggle="dropdown">Regions<span class="caret"></span></button>
+        					  <ul class="dropdown-menu filters" data-filter-group="region" role="menu">
+                     			  <li><button class="button active btn btn-default" data-filter="">show all</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".ontario">Ontario</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".toronto">Toronto</button></li>
+                       			  <li><button class="button btn btn-default" data-filter=".markham">Markham</button></li>
+                     			  <li><button class="button btn btn-default" data-filter=".northyork">North York</button></li>
+        					  </ul>
+      					  </div>
          			  </div>
-         			  <div class="button-group btn-group-vertical" data-filter-group="price"> 
-         			  <h2>Price</h2>
-         			  <button class="button active btn btn-default" data-filter="">show all</button>
-           			  <button class="button btn btn-default" data-filter=".free">Free</button>
-           			  <button class="button btn btn-default" data-filter=".$100">$100 or less</button>
-           			  <button class="button btn btn-default" data-filter=".$500">$500 or less</button>
-         			  <button class="button btn btn-default" data-filter=".$1000">$1000 or less</button>
-         			  <button class="button btn btn-default" data-filter=".$2500">$2500 or less</button>
-         			  <button class="button btn btn-default" data-filter=".rich">More than $2500</button>
-         			  </div>
-         			  <div class="button-group btn-group-vertical" data-filter-group="time">
-         			  <h2>Time</h2>
-         			  <button class="button active btn btn-default" data-filter="">show all</button>
-           			  <button class="button btn btn-default" data-filter=".summer">Summer</button>
-         			  <button class="button btn btn-default" data-filter=".schoolyear">School year</button>
-         			  </div>
-         			  <div class="button-group btn-group-vertical" data-filter-group="duration"> 
-         			  <h2>Duration</h2> 
-         			  <button class="button active btn btn-default" data-filter="">show all</button>
-           			  <button class="button btn btn-default" data-filter=".event">1 day</button>
-           			  <button class="button btn btn-default" data-filter=".week">1 week</button>  			  
-         			  <button class="button btn btn-default" data-filter=".month">1 month</button>
-         			  <button class="button btn btn-default" data-filter=".longtime">Longer than a month</button>
-         			  <button class="button btn btn-default" data-filter=".weekly">Weekly</button>
-         			  <button class="button btn btn-default" data-filter=".series">Series of events</button>
-         			  </div>
-         			  <div class="button-group btn-group-vertical" data-filter-group="region"> 
-         			  <h2>Region</h2> 
-         			  <button class="button active btn btn-default" data-filter="">show all</button>
-           			  <button class="button btn btn-default" data-filter=".ontario">Ontario</button>
-           			  <button class="button btn btn-default" data-filter=".toronto">Toronto</button>
-           			  <button class="button btn btn-default" data-filter=".markham">Markham</button>
-         			  <button class="button btn btn-default" data-filter=".northyork">North York</button>
-         			  </div>
-         			  </div>
-                       <div class="mosaic">
-                           <div class="mosaic-item portfolio-item toprated toronto markham leadership $1000">
+                      <div class="mosaic">
+                           <div class="mosaic-item portfolio-item toprated toronto markham leadership 1000 2500">
                                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -166,7 +178,7 @@
                                    <img src="img/portfolio/VisionYouthCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item summer week month toronto northyork $500 $1000 $2500 rich engineering summer">
+                           <div class="mosaic-item portfolio-item summer week month toronto northyork 500 1000 2500 rich engineering summer">
                                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -186,7 +198,7 @@
                                    <img src="img/portfolio/TSYOCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item ontario toronto markham northyork leadership $100">
+                           <div class="mosaic-item portfolio-item ontario toronto markham northyork leadership 100 500 1000 2500">
                                <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -196,7 +208,7 @@
                                    <img src="img/portfolio/DEACoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item free toronto markham northyork leadership schoolyear summer weekly week">
+                           <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto markham northyork leadership schoolyear summer weekly week">
                                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -206,7 +218,7 @@
                                    <img src="img/portfolio/ArmyCadetsCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item summer toronto markham northyork leadership $500 week">
+                           <div class="mosaic-item portfolio-item summer toronto markham northyork leadership 500 1000 2500 week">
                                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -231,7 +243,7 @@
                                    <img src="img/portfolio/ShadValleyCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-         				  <div class="mosaic-item portfolio-item toronto northyork athletics $100 schoolyear weekly">
+         				  <div class="mosaic-item portfolio-item toronto northyork athletics 100 500 1000 2500 container weekly">
                                <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -241,7 +253,7 @@
                                    <img src="img/portfolio/TUCCoverPhoto.jpg" class="img-responsive" alt="Toronto Ultimate Club">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item summer toronto northyork business leadership $500 summer week">
+                           <div class="mosaic-item portfolio-item summer toronto northyork business leadership 500 1000 2500 summer week">
                                <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -252,7 +264,7 @@
                                </a>
                            </div>
                            
-                           <div class="mosaic-item portfolio-item toronto markham northyork rich summer month">
+                           <div class="mosaic-item portfolio-item toronto markham northyork rich summer month longtime">
                                <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                                    <div class="caption"> 
                                        <div class="caption-content">
@@ -262,7 +274,7 @@
                                    <img src="img/portfolio/OCACCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item free toronto markham northyork business summer">
+                           <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto markham northyork business summer longtime">
                                <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -274,7 +286,7 @@
                            </div>
          				  
          				  
-         				  <div class="mosaic-item portfolio-item free toronto northyork markham volunteering summer schoolyear series">
+         				  <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto northyork markham volunteering summer schoolyear series">
                                <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -284,7 +296,7 @@
                                    <img src="img/portfolio/Project5kCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item free toronto markham northyork leadership schoolyear summer week weekly">
+                           <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto markham northyork leadership schoolyear summer week weekly">
                                <a href="#portfolioModal13" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -294,7 +306,7 @@
                                    <img src="img/portfolio/AirCadetsCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item markham athletics $500 rich schoolyear weekly">
+                           <div class="mosaic-item portfolio-item markham athletics 500 000 2500 rich schoolyear weekly">
                                <a href="#portfolioModal14" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -304,7 +316,7 @@
                                    <img src="img/portfolio/UMSCCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item toronto markham northyork business $100 schoolyear series">
+                           <div class="mosaic-item portfolio-item toronto markham northyork business 100 500 1000 2500 schoolyear series">
                                <a href="#portfolioModal15" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -314,7 +326,7 @@
                                    <img src="img/portfolio/DECACoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item free toronto northyork markham leadership volunteering schoolyear weekly">
+                           <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto northyork markham leadership volunteering schoolyear weekly">
                                <a href="#portfolioModal16" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -324,7 +336,7 @@
                                    <img src="img/portfolio/StJohnsAmbulanceCoverPhoto.png" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item free toronto markham northyork leadership schoolyear summer weekly week">
+                           <div class="mosaic-item portfolio-item free 100 500 1000 2500 toronto markham northyork leadership schoolyear summer weekly week">
                                <a href="#portfolioModal17" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -334,7 +346,7 @@
                                    <img src="img/portfolio/SeaCadetsCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-           				<div class="mosaic-item portfolio-item northyork athletics $500 $2500 rich schoolyear weekly">
+           				<div class="mosaic-item portfolio-item northyork athletics 500 1000 2500 rich schoolyear weekly">
                                <a href="#portfolioModal18" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -354,7 +366,7 @@
                                    <img src="img/portfolio/MarkhamAquaticClubCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item markham athletics $500 $1000 schoolear weekly">
+                           <div class="mosaic-item portfolio-item markham athletics 500 1000 2500 schoolear weekly">
                                <a href="#portfolioModal20" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -365,7 +377,7 @@
                                </a>
                            </div>
                            
-                           <div class="mosaic-item portfolio-item event free toronto northyork markham volunteering schoolyear">
+                           <div class="mosaic-item portfolio-item event free 100 500 1000 2500 toronto northyork markham volunteering schoolyear">
                                <a href="#portfolioModal21" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -375,7 +387,7 @@
                                    <img src="img/portfolio/RideForRefugeCoverPhoto.jpg" class="img-responsive" alt="">
                                </a>
                            </div>
-                           <div class="mosaic-item portfolio-item event $100 toronto markham northyork volunteering schoolyear">
+                           <div class="mosaic-item portfolio-item event 100 500 1000 2500 toronto markham northyork volunteering schoolyear">
                                <a href="#portfolioModal22" class="portfolio-link" data-toggle="modal">
                                    <div class="caption">
                                        <div class="caption-content">
@@ -1341,7 +1353,7 @@
                                    <div class="modal-body">
                                        <h2>CN Tower Climb</h2>
                                        <hr class="star-primary">
-                                       <img src="img/portfolio/CNTowerClimbCoverPhoto.png" class="img-responsive img-centered" alt="Ontario Summer Company">
+                                       <img src="img/portfolio/CNTowerClimbCoverPhoto.jpg" class="img-responsive img-centered" alt="CN Tower Climb">
                                        <p>The CN Tower Climb for United Way offers you a rare chance to walk past the elevators and straight up Toronto’s most famous landmark. While celebrating a tall personal feat in conquering all 1,776 steps, you’ll also be making meaningful change possible for thousands of individuals and families, elevating our community as a whole. So, are you ready to step up? Way up?</p>
                                        <ul class="list-inline item-details">
                                            <li>Location:

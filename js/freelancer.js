@@ -53,6 +53,11 @@ $( document ).ready( function() {
   
 });
 
+$(".dropdown-menu li button").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+	
 //helper function
 function concatValues (obj) {
 var value = '';
