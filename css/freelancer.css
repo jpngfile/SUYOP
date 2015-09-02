@@ -212,6 +212,7 @@ padding-bottom:15px;
  }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
  .in{
  width:100%;
   }
@@ -235,6 +236,12 @@ z-index:9999;
   position:relative;
   z-index: -2;
  }
+=======
+.dropdown-menu {
+  position:relative;
+  z-index: -2;
+ }
+>>>>>>> origin/master
 
  .filter-group {
 >>>>>>> origin/master
