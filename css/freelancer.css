@@ -210,8 +210,7 @@ padding-bottom:15px;
  }
 
 .dropdown-menu {
-  position:relative;
-  z-index: -2;
+
  }
 
  .filter-group {
@@ -227,6 +226,7 @@ z-index:-1;
   }
 
 #portfolio .portfolio-item {
+  z-index: -1;
   display:block;
 min-height: 1px;
   padding-left: 15px;
@@ -280,9 +280,11 @@ min-height: 1px;
 }
 
 #portfolio * {
+    z-index: 1;
+}
+#portfolio2 * {
     z-index: 2;
 }
-
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
@@ -485,4 +487,8 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+.test
+{
+  z-index: -100;
 }
