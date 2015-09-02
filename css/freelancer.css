@@ -210,8 +210,10 @@ padding-bottom:15px;
  }
 
 .dropdown-menu {
+  position:relative;
+  z-index: -2;
  }
- 
+
  .filter-group {
  position:relative;
  z-index:2;
@@ -220,10 +222,10 @@ padding-bottom:15px;
 position:relative;
 z-index:-1;
  }
- 
+
  .mosaic {
   }
- 
+
 #portfolio .portfolio-item {
   display:block;
 min-height: 1px;
