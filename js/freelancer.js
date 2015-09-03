@@ -17,7 +17,7 @@ $(function() {
 
 //Portfolio
 
-
+var allButtons = ["All types","General","All prices","All times","All durations","All regions"];
 $( document ).ready( function() {
   // init Isotope
   var $container = $('.mosaic').isotope({
@@ -41,19 +41,42 @@ $( document ).ready( function() {
     $container.isotope({ filter: filterValue });
   });
 
+  $('.filters').on( 'click', 'a', function() {
+  var $this = $(this);
+  var $buttonGroup = $this.parents('.button-group');
+  var filterGroup = $buttonGroup.attr ('data-filter-group');
+  
+  filters [filterGroup] = $this.attr('data-filter');
+  var filterValue = concatValues (filters);
+    $container.isotope({ filter: filterValue });
+  });
 
   // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
+ $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.active').removeClass('active');
-      $( this ).addClass('active');
+    $buttonGroup.on( 'click', 'a', function() {
+      var selText = $(this).text();
+	  if (inArray(selText)){	
+	  $(this).parents('.btn-group-vertical').find('.active').removeClass('active');	  
+	  //$( this ).addClass('active');  
+	  }
+	  else{
+	  $(this).parents('.btn-group-vertical').find('.dropdown-toggle').addClass('active');  
+	  }
+	  /*else{
+      $buttonGroup.find('active').removeClass ('active');
+	  }*/
     });
   });
-  
+
 });
 
 $(".dropdown-menu li button").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group-vertical').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
+
+$(".dropdown-menu li a").click(function(){
   var selText = $(this).text();
   $(this).parents('.btn-group-vertical').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
 });
@@ -65,6 +88,14 @@ for (var prop in obj) {
 value+=obj[prop];
 }
 return value;
+}
+function inArray (name){
+    for (var i = 0;i < allButtons.length;i++)
+    {
+      if (name == (allButtons[i]) || name == (allButtons[i] +' <span class="caret"></span>')|| name == (allButtons[i] +'<span class="caret"></span>'))
+      return true;
+    }
+return false;
 }
 // Floating label headings for the contact form
 $(function() {

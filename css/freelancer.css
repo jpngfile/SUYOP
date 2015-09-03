@@ -211,56 +211,13 @@ section.success a.active {
 padding-bottom:15px;
  }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
- .in{
- width:100%;
-  }
- .dropdown-menu {
- position:relative;
- overflow:hidden;
-left: 0; top: 100%;           
-width: 100%; 
-z-index:9999;
-  }
-.dropdown-menu li{
-
- }
- .dropdown-toggle{
- position:relative;
-  }
- 
- .derp{
-=======
-.dropdown-menu {
-  position:relative;
-  z-index: -2;
- }
-=======
-.dropdown-menu {
-  position:relative;
-  z-index: -2;
- }
->>>>>>> origin/master
-
- .filter-group {
->>>>>>> origin/master
- position:relative;
- z-index:9999;
-  }
- .filter-group {
-position:relative;
- z-index:9999;
-  }
-.mosaic-item {
- }
-
  .mosaic {
  position:relative;
  z-index:-1;
   }
 
 #portfolio .portfolio-item {
+z-index:-1;
   display:block;
 min-height: 1px;
   padding-left: 15px;
@@ -314,8 +271,15 @@ min-height: 1px;
 }
 
 #portfolio * {
-    z-index: 2;
+    z-index: 1;
 }
+#portfolio2 *{
+z-index:2;
+ }
+ 
+.in{
+ width:100%;
+  }
 
 @media(min-width:767px) {
     #portfolio .portfolio-item {
@@ -482,6 +446,7 @@ footer .footer-below {
     list-style-type:none;
     text-align:left;
 }
+
 
 .portfolio-modal .close-modal {
     position: absolute;
