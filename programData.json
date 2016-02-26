@@ -1,0 +1,28 @@
+{"Programs":[
+	{"name":"Vision Youth", "attributes": ["toronto","markham","leadership","1000","2500"],
+	 "description" : ["Founded in 2001, the Vision Youth Leadership Program is designed to complement the regular school academic curriculum to help our youth to develop life skills, which will prepare them for a successful and rewarding future. We encourage civic participation and the continuous development of physical, social, and leadership skills through a holistic training approach."],
+	 "location" : "Markham/North York",
+	 "locationLink" : "NULL",
+	 "locationLinkName" : "NULL",
+	 "time" : "June - Febuary",
+	 "cost" : "$1000",
+	 "age" : "14- 17",
+	 "requirements" : "Application with short answer questions and an interview",
+	 "applicPeriod" : "March",
+	 "link" : "http://www.visionyouth.ca/visionyouth/vy/home.php",
+	 "cleanLink" : "www.visionyouth.ca"},
+	 
+	{"name" : "DEEP Summer Academy" , "attributes" : ["summer", "week", "month","toronto","northyork","500","1000","2500","rich","engineering","summer"],
+	 "description" : ["Organized by the University of Toronto’s Faculty of Applied Science & Engineering, DEEP Summer Academy offers a diverse range of pre-university engineering and science courses.",
+	 				  "Each course is one week long. The program is flexible; students can choose to attend one, two, three or four weeks of DEEP. In addition to our on-campus program, we also offer a one-week outdoor leadership camp option. DEEP Leadership Camp runs concurrently with the summer academy."],
+	 "location" : "Downtown Toronto",
+	 "locationLink" : "https://www.google.ca/maps/place/35+St+George+St,+Toronto,+ON+M5S+1A4/@43.6598852,-79.3963525,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34c75769cce9:0x7ecb91e08bee64de",
+	 "locationLinkName" : "University of Toronto St. George",
+	 "time" : "July",
+	 "cost" : "$465/week without residence. $1290/week with residence",
+	 "age" : "14 - 17 (high school)",
+	 "requirements" : "Application based on grades and statement of interest",
+	 "applicPeriod" : "\"registration will open in the new year\" (no date)",
+	 "link" : "http://outreach.engineering.utoronto.ca/pre-university-programs/deep-summer-academy/",
+	 "cleanLink" : "outreach.engineering.utoronto.ca"}
+	 ]}
