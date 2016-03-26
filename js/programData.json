@@ -1,4 +1,4 @@
-{"Programs":[
+programData = [
 	{"name":"Vision Youth", "attributes": ["toronto","markham","leadership","1000","2500"],
 	 "description" : ["Founded in 2001, the Vision Youth Leadership Program is designed to complement the regular school academic curriculum to help our youth to develop life skills, which will prepare them for a successful and rewarding future. We encourage civic participation and the continuous development of physical, social, and leadership skills through a holistic training approach."],
 	 "location" : "Markham/North York",
@@ -12,7 +12,7 @@
 	 "link" : "http://www.visionyouth.ca/visionyouth/vy/home.php",
 	 "cleanLink" : "www.visionyouth.ca"},
 	 
-	{"name" : "DEEP Summer Academy" , "attributes" : ["summer", "week", "month","toronto","northyork","500","1000","2500","rich","engineering","summer"],
+	{"name" : "DEEP Summer Academy" , "attributes" : ["summer", "week", "month","toronto","northyork","500","1000","2500","rich","engineering"],
 	 "description" : ["Organized by the University of Toronto’s Faculty of Applied Science & Engineering, DEEP Summer Academy offers a diverse range of pre-university engineering and science courses.",
 	 				  "Each course is one week long. The program is flexible; students can choose to attend one, two, three or four weeks of DEEP. In addition to our on-campus program, we also offer a one-week outdoor leadership camp option. DEEP Leadership Camp runs concurrently with the summer academy."],
 	 "location" : "Downtown Toronto",
@@ -25,4 +25,4 @@
 	 "applicPeriod" : "\"registration will open in the new year\" (no date)",
 	 "link" : "http://outreach.engineering.utoronto.ca/pre-university-programs/deep-summer-academy/",
 	 "cleanLink" : "outreach.engineering.utoronto.ca"}
-	 ]}
+	 ];
