@@ -37,6 +37,10 @@ var allButtons = ["All types","General","All prices","All times","All durations"
 $( document ).ready( function() {
   var elem = document.getElementById("mosaic");
   elem.innerHTML = '';
+  var listMosaic = document.getElementById("list-mosaic");
+  listMosaic.innerHTML = '';
+  var list = document.createElement ("ul");
+  list.className = "table-ish";
   myData = programData;
   for (var i = myData.length - 1; i >= 0; i--) {
 
@@ -123,7 +127,7 @@ $( document ).ready( function() {
     modalBody.appendChild (starDivide);
     modalBody.appendChild (image);
     for (var j = 0; j < desc.length; j++) {
-      console.log (desc[j]);
+      //console.log (desc[j]);
         modalBody.appendChild (desc[j]);
     };
     modalBody.appendChild (details);
@@ -149,7 +153,7 @@ $( document ).ready( function() {
 
     var programLink = document.createElement ('a');
     programLink.href = "#portfolioModal" + i;
-    console.log (programLink.href);
+    //console.log (programLink.href);
     programLink.className = "portfolio-link";
     programLink.setAttribute ("data-toggle", "modal");
 
@@ -180,7 +184,44 @@ $( document ).ready( function() {
 
     elem.appendChild (mosaicItem);
 
+    //making the list-mosaic
+    var tableItem = document.createElement ("li");
+    tableItem.className = "table-item-ish";
+
+
+    //This could be replaced with a for loop through an array
+    var listName = document.createElement ('div');
+    listName.className = "name";
+    listName.innerHTML = myData[i].name;
+    tableItem.appendChild (listName);
+    var listType = document.createElement ('div');
+    listType.className = "type";
+    listType.innerHTML = myData[i].type;
+    tableItem.appendChild (listType);
+    var listTime = document.createElement ('div');
+    listTime.className = "time";
+    listTime.innerHTML = myData[i].time;
+    tableItem.appendChild (listTime);
+    var listCost = document.createElement ('div');
+    listCost.className = "cost";
+    listCost.innerHTML = myData[i].cost;
+    tableItem.appendChild (listCost);
+    var listAge = document.createElement ('div');
+    listAge.className = "age";
+    listAge.innerHTML = myData[i].age;
+    tableItem.appendChild (listAge);
+    var listWebsite = document.createElement ('div');
+    listWebsite.className = "website";
+    var listLink = document.createElement ('a');
+    listLink.href = myData[i].link;
+    listLink.target = "_blank";
+    listLink.innerHTML = myData[i].cleanLink;
+    listWebsite.appendChild (listLink);
+    tableItem.appendChild (listWebsite);
+
+    list.appendChild (tableItem);
   };
+  listMosaic.appendChild (list);
 
   // init Isotope
   var $container = $('.mosaic').isotope({
@@ -204,6 +245,7 @@ $( document ).ready( function() {
     $container.isotope({ filter: filterValue });
   });
 
+//only difference is 'button' and 'a'. Why is this?
   $('.filters').on( 'click', 'a', function() {
   var $this = $(this);
   var $buttonGroup = $this.parents('.button-group');
@@ -213,6 +255,23 @@ $( document ).ready( function() {
   var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
   });
+
+  //changing the isotope view
+  $('.view').on('click','a', function(){
+    var $this = $(this);
+    var viewType = $this.attr('view-type');
+    console.log ("view pressed");
+    if (viewType === ".list"){
+      //set display to none or default depending on what the value is
+      //listMosaic.style.display = "relative";
+      listMosaic.style.display = 'block';
+      elem.style.display = 'none';
+    }
+    else{
+      elem.style.display = 'block';
+      listMosaic.style.display = 'none';
+    }
+  })
 
   // change is-checked class on buttons
  $('.button-group').each( function( i, buttonGroup ) {
