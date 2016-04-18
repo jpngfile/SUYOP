@@ -39,8 +39,44 @@ $( document ).ready( function() {
   elem.innerHTML = '';
   var listMosaic = document.getElementById("list-mosaic");
   listMosaic.innerHTML = '';
-  var list = document.createElement ("ul");
+
+  var listwrapper = document.createElement("div");
+  listwrapper.className = "wrapper";
+
+  var list = document.createElement ("div");
   list.className = "table-ish";
+
+  //creating a list header 
+  var header = document.createElement("div");
+  header.className = "table-row header green";
+
+  var nameHead = document.createElement("div");
+  nameHead.className = "cell";
+  nameHead.innerHTML = "Name";
+  var typeHead = document.createElement("div");
+  typeHead.className = "cell";
+  typeHead.innerHTML = "Type";
+  var timeHead = document.createElement("div");
+  timeHead.className = "cell";
+  timeHead.innerHTML = "Time";
+  var costHead = document.createElement("div");
+  costHead.className = "cell";
+  costHead.innerHTML = "Cost";
+  var ageHead = document.createElement("div");
+  ageHead.className = "cell";
+  ageHead.innerHTML = "Age";
+  var websiteHead = document.createElement("div");
+  websiteHead.className = "cell";
+  websiteHead.innerHTML = "Website";
+  header.appendChild (nameHead);
+  header.appendChild (typeHead);
+  header.appendChild (timeHead);
+  header.appendChild (costHead);
+  header.appendChild (ageHead);
+  header.appendChild (websiteHead);
+  list.appendChild (header);
+
+
   myData = programData;
   for (var i = myData.length - 1; i >= 0; i--) {
 
@@ -185,33 +221,33 @@ $( document ).ready( function() {
     elem.appendChild (mosaicItem);
 
     //making the list-mosaic
-    var tableItem = document.createElement ("li");
-    tableItem.className = "table-item-ish";
+    var tableItem = document.createElement ("div");
+    tableItem.className = "table-row";
 
 
     //This could be replaced with a for loop through an array
     var listName = document.createElement ('div');
-    listName.className = "name";
+    listName.className = "name cell";
     listName.innerHTML = myData[i].name;
     tableItem.appendChild (listName);
     var listType = document.createElement ('div');
-    listType.className = "type";
+    listType.className = "type cell";
     listType.innerHTML = myData[i].type;
     tableItem.appendChild (listType);
     var listTime = document.createElement ('div');
-    listTime.className = "time";
+    listTime.className = "time cell";
     listTime.innerHTML = myData[i].time;
     tableItem.appendChild (listTime);
     var listCost = document.createElement ('div');
-    listCost.className = "cost";
+    listCost.className = "cost cell";
     listCost.innerHTML = myData[i].cost;
     tableItem.appendChild (listCost);
     var listAge = document.createElement ('div');
-    listAge.className = "age";
+    listAge.className = "age cell";
     listAge.innerHTML = myData[i].age;
     tableItem.appendChild (listAge);
     var listWebsite = document.createElement ('div');
-    listWebsite.className = "website";
+    listWebsite.className = "website cell";
     var listLink = document.createElement ('a');
     listLink.href = myData[i].link;
     listLink.target = "_blank";
@@ -221,7 +257,8 @@ $( document ).ready( function() {
 
     list.appendChild (tableItem);
   };
-  listMosaic.appendChild (list);
+  listwrapper.appendChild (list);
+  listMosaic.appendChild (listwrapper);
 
   // init Isotope
   var $container = $('.mosaic').isotope({
