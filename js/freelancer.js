@@ -113,7 +113,7 @@ $( document ).ready( function() {
     starDivide.setAttribute ("class", "star-primary");
 
     var image = document.createElement ('img');
-    image.src = "img/portfolio/" + myData[i].name + "CoverPhoto.jpg"; //The type of image file might change
+    image.src = "img/portfolio/" + myData[i].photoName + "CoverPhoto" + myData[i].photoType; //The type of image file might change
     image.className = "img-responsive img-centered";
     image.alt = myData[i].name;
 
@@ -206,7 +206,7 @@ $( document ).ready( function() {
     caption.appendChild (captionContent);
 
     var gridImage = document.createElement ('img');
-    gridImage.src = "img/portfolio/" + myData[i].name + "CoverPhoto.jpg";//could be different kind of file type
+    gridImage.src = "img/portfolio/" + myData[i].photoName + "CoverPhoto" + myData[i].photoType;//could be different kind of file type
     gridImage.className = "img-responsive";
     gridImage.alt = myData[i].name;
 
