@@ -216,7 +216,11 @@ programData = [
      "locationLinkName" : "NULL",
      "photoName" : "UMSC",
      "photoType" : ".jpg",
+<<<<<<< HEAD
      "type" : "sports",
+=======
+     "type" : "athletics",
+>>>>>>> origin/master
      "time" : "House leagues outdoor (june - september) indoor (november - march). Competitive is full year.",
      "cost" : "$245/season for house league. Competitive is $4000-4500/ year",
      "age" : "All ages",
@@ -280,7 +284,11 @@ programData = [
      "locationLinkName" : "NULL",
      "photoName" : "NYAC",
      "photoType" : ".jpg",
+<<<<<<< HEAD
      "type" : "sports",
+=======
+     "type" : "athletics",
+>>>>>>> origin/master
      "time" : "Contact directly for more information",
      "cost" : "Contact directly for more information",
      "age" : "6+",
@@ -296,7 +304,11 @@ programData = [
      "locationLinkName" : "NULL",
      "photoName" : "MarkhamAquaticClub",
      "photoType" : ".jpg",
+<<<<<<< HEAD
      "type" : "sports",
+=======
+     "type" : "athletics",
+>>>>>>> origin/master
      "time" : "Contact directly for more information",
      "cost" : "Contact directly for more information",
      "age" : "6+",
@@ -312,7 +324,11 @@ programData = [
      "locationLinkName" : "NULL",
      "photoName" : "MUMBA",
      "photoType" : ".jpg",
+<<<<<<< HEAD
      "type" : "sports",
+=======
+     "type" : "athletics",
+>>>>>>> origin/master
      "time" : "October - April (tryouts are in September)",
      "cost" : "$475 for house league, $850 for rep program",
      "age" : "5 - 18",
@@ -354,6 +370,7 @@ programData = [
      "link" : "http://www.unitedwaytyr.com/climb" ,
      "cleanLink" : "www.unitedwaytyr.com"},
 
+<<<<<<< HEAD
  {"name" : "Red Cross" , "attributes" : [],
      "description" : ["Red cross is a not for profit organization that teaches first aid and also helps developing countries during natural disasters."],
      "location" : "",
@@ -482,6 +499,8 @@ programData = [
      "applicPeriod" : "",
      "link" : "" ,
      "cleanLink" : ""},
+=======
+>>>>>>> origin/master
 
 
 	 ];
