@@ -142,7 +142,8 @@ $( document ).ready( function() {
     var link = document.createElement ('a');
     link.href = myData[i].link;
     link.target = "_blank";
-    link.innerHTML = "Website: <strong>" + myData[i].cleanLink + "</strong>";
+    link.innerHTML = "<strong>" + myData[i].cleanLink + "</strong>";
+    website.innerHTML = "Website: "
     website.appendChild (link);
 
     var closeButton = document.createElement ("button");
