@@ -354,7 +354,7 @@ programData = [
      "link" : "http://www.unitedwaytyr.com/climb" ,
      "cleanLink" : "www.unitedwaytyr.com"},
 
- {"name" : "Red Cross" , "attributes" : [],
+ {"name" : "Red Cross" , "attributes" : ["volunteering", "free", "100", "500", "1000","2500","summer","schoolyear", ".longtime","weekly","event","toronto","markham","northyork"],
      "description" : ["Red cross is a not for profit organization that teaches first aid and also helps developing countries during natural disasters."],
      "location" : "Canada",
      "locationLink" : "NULL",
@@ -371,7 +371,7 @@ programData = [
      "cleanLink" : "www.redcross.ca"},
 
       
-{"name" : "Zero to Startup" , "attributes" : ["engineering", "business","leadership","toronto"],
+{"name" : "Zero to Startup" , "attributes" : ["engineering", "business","leadership","toronto","1000","2500","schoolyear","weekly"],
      "description" : ["Zero to Startup is a 13 week program where youth design develop and build their own solution to everyday problems using state of the art technology. Mentors guide the students through a curriculum where they learn how to use the tools needed to build prototypes."],
      "location" : "Toronto",
      "locationLink" : "NULL",
@@ -379,7 +379,7 @@ programData = [
      "photoName" : "ZeroToStartup",
      "photoType" : ".jpg",
      "type" : "engineering / business",
-     "time" : "13 weeks",
+     "time" : "Feb - May (13 weeks)",
      "cost" : "$700",
      "age" : "12 - 17",
      "requirements" : "None",
@@ -387,7 +387,7 @@ programData = [
      "link" : "http://www.zerotostartup.org/" ,
      "cleanLink" : "www.zerotostartup.org"},
 
-     {"name" : "Me to We / Free the Children" , "attributes" : [],
+     {"name" : "Me to We / Free the Children" , "attributes" : ["leadership","volunteering","free","100","500","1000","2500","summer","schoolyear","event","longtime","weekly","series","toronto","markham","northyork"],
      "description" : ["ME to WE is an innovative social enterprise that provides products that make an impact, empowering people to change the world with their everyday consumer choices. Free the children is a world wide organization that teaches youth responsible global movements to help communities in developing countries. Check out the website to see how you can get involved, including attending WE day, joining the ME to We leadership programs and starting your own Free the Children chapter."],
      "location" : "Canada",
      "locationLink" : "NULL",
@@ -403,7 +403,7 @@ programData = [
      "link" : "http://www.metowe.com/" ,
      "cleanLink" : "www.metowe.com"},
 
-     {"name" : "Habitat for Humanity" , "attributes" : [],
+     {"name" : "Habitat for Humanity" , "attributes" : ["volunteering","free","100","500","1000","2500","summer","schoolyear","event","weekly","toronto","markham","northyork"],
      "description" : ["Habitat for Humanity is a non profit organization that builds low income housing in under developed communities across Canada. Volunteer or donate to help build houses for those less fortunate."],
      "location" : "Toronto",
      "locationLink" : "NULL",
@@ -412,14 +412,14 @@ programData = [
      "photoType" : ".jpg",
      "type" : "volunteering",
      "time" : "Year round",
-     "cost" : "None",
+     "cost" : "Free for general volunteering; $1000 per group for the Adopt a Day program",
      "age" : "16+",
      "requirements" : "None",
      "applicPeriod" : "Any time",
      "link" : "http://www.habitatgta.ca/",
      "cleanLink" : "www.habitatgta.ca"},
 
-     {"name" : "Relay for Life" , "attributes" : [],
+     {"name" : "Relay for Life" , "attributes" : ["volunteering","free","100","500","1000","2500","schoolyear","event","toronto","markham","northyork"],
      "description" : ["Relay for life is a cancer walk supported by the Canadian cancer society. It is to raise money for cancer research, and many high schools take part in organizing a relay for life event in their community."],
      "location" : "Canada",
      "locationLink" : "NULL",
@@ -435,7 +435,7 @@ programData = [
      "link" : "http://convio.cancer.ca/site/PageServer?pagename=RFL_CAN_NATL_homepage&s_locale=en_CA" ,
      "cleanLink" : "relayforlife.ca"},
 
-     {"name" : "FIRST Robotics Canada" , "attributes" : [],
+     {"name" : "FIRST Robotics Canada" , "attributes" : ["engineering","rich","schoolyear","weekly","event","toronto","markham","northyork"],
      "description" : ["An international competition where high school clubs build robots to compete against one another in a set task. Sign up or start your own team with your high school."],
      "location" : "Canada",
      "locationLink" : "NULL",
@@ -451,7 +451,7 @@ programData = [
      "link" : "http://www.firstroboticscanada.org/main/" ,
      "cleanLink" : "www.firstroboticscanada.org"},
 
-     {"name" : "YMCA Youth Leadership Programs" , "attributes" : [],
+     {"name" : "YMCA Youth Leadership Programs" , "attributes" : ["volunteering","leadership","free","100","500","1000","2500","schoolyear","summer","event","weekly", "toronto", "markham","northyork"],
      "description" : ["New friends, new skills, counselling – you can find it all and more at your YMCA. Our youth programs are specifically designed to help you achieve your goals, or help you get your life back on track.",
                          "The YMCA offers: \n&#9679; Training and mentorship to help you become a community leader\n&#9679; Exchange programs to help you experience more of Canada\n&#9679; Build self-esteem and gain confidence at Teen Nights\n&#9679; Counselling, support and housing to help you overcome life challenges\n&#9679; Alternative education programs tailored to your needs"],
      "location" : "Toronto",
@@ -468,7 +468,7 @@ programData = [
      "link" : "https://ymcagta.org/youth-programs" ,
      "cleanLink" : "www.ymcagta.org"},
 
-      {"name" : "Summer Institute Leaders of Tomorrow" , "attributes" : [],
+      {"name" : "Summer Institute Leaders of Tomorrow" , "attributes" : ["volunteering","free","100","500","1000","2500","summer","longtime","markham"],
      "description" : ["Summer institute is a summer camp that is run by the York region school board across Markham however their leaders of tomorrow program is directed at students about to enter high school, training them to be future leaders. "],
      "location" : "Markham",
      "locationLink" : "NULL",
@@ -484,7 +484,7 @@ programData = [
      "link" : "http://www.yrdsb.ca/Programs/summer/si/Pages/default.aspx" ,
      "cleanLink" : "www.yrdsb.ca"},
 
-     {"name" : "Major League Hacking" , "attributes" : [],
+     {"name" : "Major League Hacking" , "attributes" : ["toprated","engineering","free","100","500","1000","2500","summer","schoolyear","series","toronto","markham","northyork"],
      "description" : ["Major League Hacking (MLH) is the official student hackathon league. Each year, we power over 200 weekend-long invention competitions that inspire innovation, cultivate communities and teach computer science skills to more than 65,000 students around the world. MLH is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs."],
      "location" : "Worldwide",
      "locationLink" : "NULL",
