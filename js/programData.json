@@ -112,7 +112,7 @@ programData = [
      "link" : "http://www.shad.ca/",
      "cleanLink" : "www.shad.ca"},
 
-     {"name" : "Toronto Ultimate Club" , "attributes" : ["toronto", "northyork", "athletics", "100", "500", "1000", "2500", "container", "weekly"],
+     {"name" : "Toronto Ultimate Club" , "attributes" : ["toronto", "northyork", "athletics", "100", "500", "1000", "2500", "weekly"],
      "description" : ["The Toronto Ultimate Club is the flagship organization that provides the highest quality Ultimate experience to the greater Toronto community. Its growth is measured by member value and is driven by integrity, excellence, and citizenship."],
      "location" : "Toronto",
      "locationLink" : "NULL",
