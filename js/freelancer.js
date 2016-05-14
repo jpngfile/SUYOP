@@ -38,16 +38,17 @@ $( document ).ready( function() {
   var elem = document.getElementById("mosaic");
   elem.innerHTML = '';
   var listMosaic = document.getElementById("list-mosaic");
-  listMosaic.innerHTML = '';
+  //listMosaic.innerHTML = '';
 
-  var listwrapper = document.createElement("div");
-  listwrapper.className = "wrapper";
+  //var listwrapper = document.createElement(""div");
+    //listwrapper.className = "wrapper";"
 
-  var list = document.createElement ("div");
-  list.className = "table-ish";
+  var list = document.getElementById("table-ish"); //document.createElement ("div");
+ // list.className = "table-ish";
 
   //creating a list header 
-  var header = document.createElement("div");
+  //var header = document.createElement("div");
+  /*
   header.className = "table-row header green";
 
   var nameHead = document.createElement("div");
@@ -73,8 +74,8 @@ $( document ).ready( function() {
   header.appendChild (timeHead);
   header.appendChild (costHead);
   header.appendChild (ageHead);
-  header.appendChild (websiteHead);
-  list.appendChild (header);
+  header.appendChild (websiteHead); 
+  list.appendChild (header); */
 
 
   myData = programData;
@@ -226,7 +227,7 @@ $( document ).ready( function() {
 
     //making the list-mosaic
     var tableItem = document.createElement ("div");
-    tableItem.className = "table-row";
+    tableItem.className = "table-row program-row " + filters;
 
 
     //This could be replaced with a for loop through an array
@@ -261,18 +262,29 @@ $( document ).ready( function() {
 
     list.appendChild (tableItem);
   };
-  listwrapper.appendChild (list);
-  listMosaic.appendChild (listwrapper);
+  //listwrapper.appendChild (list);
+  //listMosaic.appendChild (listwrapper);
 
   // init Isotope
   var $container = $('.mosaic').isotope({
     itemSelector: '.mosaic-item',
-    layoutMode: 'masonry',
+    layoutMode: 'masonry'
   });
+
+  /*var $list = $('.list-mosaic').isotope({
+    itemSelector: '.program-row',
+    layoutMode: 'vertical'
+  }) */
   
   $container.imagesLoaded().progress (function(){
   $container.isotope ('layout');
   });
+
+/*
+   $list.imagesLoaded().progress (function(){
+  $list.isotope ('layout');
+  });
+*/
   
   var filters ={};
   // bind filter button click
@@ -284,6 +296,7 @@ $( document ).ready( function() {
   filters [filterGroup] = $this.attr('data-filter');
   var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
+   // $list.isotope({filter : filterValue});
   });
 
 //only difference is 'button' and 'a'. Why is this?
@@ -295,6 +308,7 @@ $( document ).ready( function() {
   filters [filterGroup] = $this.attr('data-filter');
   var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
+   // $list.isotope({filter: filterValue});
   });
 
   //changing the isotope view
