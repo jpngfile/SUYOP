@@ -79,7 +79,7 @@ $( document ).ready( function() {
 
 
   myData = programData;
-  for (var i = 0; i < myData.length; i++) {
+  for (var i = myData.length - 1; i >= 0; i--) {
 
     //Making the content modal
     var contentModal = document.createElement ('div');
@@ -103,14 +103,11 @@ $( document ).ready( function() {
     closeModal.appendChild (lr);
 
     var container = document.createElement ('div');
-    container.className = "container"
     var row = document.createElement ('div');
-    row.className = "row"
     var col = document.createElement ('div');
     col.className = "col-lg-8 col-lg-offset-2";
 
     var modalBody = document.createElement ('div');
-    modalBody.className = "modale-body"
     var name = document.createElement ('h2');
     name.innerHTML = myData[i].name;
     var starDivide = document.createElement ('hr');
