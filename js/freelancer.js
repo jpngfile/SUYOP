@@ -37,13 +37,13 @@ var allButtons = ["All types","General","All prices","All times","All durations"
 $( document ).ready( function() {
   var elem = document.getElementById("mosaic");
   elem.innerHTML = '';
-  var listMosaic = document.getElementById("list-mosaic");
+  var list = document.getElementById("table-like");
   //listMosaic.innerHTML = '';
 
   //var listwrapper = document.createElement(""div");
     //listwrapper.className = "wrapper";"
 
-  var list = document.getElementById("table-ish"); //document.createElement ("div");
+  //var list = document.getElementById("table-ish"); //document.createElement ("div");
  // list.className = "table-ish";
 
   //creating a list header 
@@ -224,7 +224,7 @@ $( document ).ready( function() {
 
     //making the list-mosaic
     var tableItem = document.createElement ("div");
-    tableItem.className = "table-row program-row " + filters;
+    tableItem.className = "table-like__item program-row " + filters;
 
 
     //This could be replaced with a for loop through an array
@@ -268,10 +268,10 @@ $( document ).ready( function() {
     layoutMode: 'masonry'
   });
 
-  /*var $list = $('.list-mosaic').isotope({
-    itemSelector: '.program-row',
+  var $list = $('.table-like').isotope({
+    //itemSelector: '.table-like__item',
     layoutMode: 'vertical'
-  }) */
+  }) 
   
   $container.imagesLoaded().progress (function(){
   $container.isotope ('layout');
@@ -293,7 +293,7 @@ $( document ).ready( function() {
   filters [filterGroup] = $this.attr('data-filter');
   var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
-   // $list.isotope({filter : filterValue});
+    $list.isotope({filter : filterValue});
   });
 
 //only difference is 'button' and 'a'. Why is this?
@@ -305,7 +305,7 @@ $( document ).ready( function() {
   filters [filterGroup] = $this.attr('data-filter');
   var filterValue = concatValues (filters);
     $container.isotope({ filter: filterValue });
-   // $list.isotope({filter: filterValue});
+    $list.isotope({filter: filterValue});
   });
 
   //changing the isotope view
@@ -316,12 +316,13 @@ $( document ).ready( function() {
     if (viewType === ".list"){
       //set display to none or default depending on what the value is
       //listMosaic.style.display = "relative";
-      listMosaic.style.display = 'block';
+      list.style.display = 'block';
       elem.style.display = 'none';
+      $list.isotope ('layout');
     }
     else{
       elem.style.display = 'block';
-      listMosaic.style.display = 'none';
+      list.style.display = 'none';
     }
   })
 
