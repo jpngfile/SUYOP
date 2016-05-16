@@ -79,7 +79,7 @@ $( document ).ready( function() {
 
 
   myData = programData;
-  for (var i = myData.length - 1; i >= 0; i--) {
+  for (var i = 0; i < myData.length; i++) {
 
     //Making the content modal
     var contentModal = document.createElement ('div');
@@ -224,7 +224,7 @@ $( document ).ready( function() {
 
     //making the list-mosaic
     var tableItem = document.createElement ("div");
-    tableItem.className = "table-like__item program-row " + filters;
+    tableItem.className = "table-like__item program-item " + filters;
 
 
     //This could be replaced with a for loop through an array
@@ -269,7 +269,7 @@ $( document ).ready( function() {
   });
 
   var $list = $('.table-like').isotope({
-    //itemSelector: '.table-like__item',
+    //itemSelector: '.program-item',
     layoutMode: 'vertical'
   }) 
   
@@ -307,6 +307,7 @@ $( document ).ready( function() {
     $container.isotope({ filter: filterValue });
     $list.isotope({filter: filterValue});
   });
+
 
   //changing the isotope view
   $('.view').on('click','a', function(){

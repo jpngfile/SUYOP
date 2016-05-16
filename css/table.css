@@ -38,7 +38,7 @@
   background: #DDD;
   max-width: 1200px;
   list-style: none;
-  margin: 0 100px;
+  margin: 0 auto;
   padding: 0;
   display: none; 
 }
@@ -49,6 +49,7 @@
   display: block;
   clear: both;
 }
+
 
 /* ---- vertical table-like ---- */
 
@@ -72,6 +73,7 @@
 .table-like__item:nth-of-type(odd) {
   background: #e9e9e9;
 }
+
 .table-like__item.header {
   font-weight: 900;
   color: #ffffff;
